@@ -7,7 +7,7 @@ const client = new Discord.Client();
 const TOKEN = 'YOUR_DISCORD_BOT_TOKEN';
 
 // Minecraftサーバーログファイルのパス
-const LOG_FILE_PATH = '/path/to/your/logs/latest.log';
+const LOG_FILE_PATH = 'temp/latest.log';
 
 client.once('ready', () => {
     console.log('Bot is ready!');
@@ -31,7 +31,7 @@ function watchMinecraftLog() {
 
 function sendMessageToDiscord(playerName) {
     // Discordサーバー内のチャンネルID
-    let channelId = 'YOUR_DISCORD_CHANNEL_ID';
+    let channelId = '1160490715265122314';
 
     let channel = client.channels.cache.get(channelId);
     if (channel) {
